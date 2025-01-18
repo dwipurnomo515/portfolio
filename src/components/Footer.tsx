@@ -27,23 +27,15 @@ export default function Footer() {
   const socials = [
     {
       label: "GitHub",
-      href: "https://www.github.com/codewithsadee-org",
+      href: "https://github.com/dwipurnomo515",
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/codewithsadee",
-    },
-    {
-      label: "Twitter X",
-      href: "https://x.com/codewithsadee_",
+      href: "https://www.linkedin.com/in/dwi-purnomo-30a076320/",
     },
     {
       label: "Instagram",
-      href: "https://www.instagram.com/codewithsadee",
-    },
-    {
-      label: "CodePen",
-      href: "https://codepen.io/codewithsadee",
+      href: "https://www.instagram.com/dwi_ask",
     },
   ];
   return (
