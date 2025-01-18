@@ -4,6 +4,7 @@ interface ButtonProps {
   label?: string;
   icon?: string;
   classes?: string;
+  download?: string;
 }
 
 export default function ButtonPrimary({
@@ -12,10 +13,16 @@ export default function ButtonPrimary({
   label,
   icon,
   classes,
+  download,
 }: ButtonProps) {
   if (href) {
     return (
-      <a href={href} target={target} className={"btn btn-primary " + classes}>
+      <a
+        href={href}
+        target={target}
+        className={"btn btn-primary " + classes}
+        download={download}
+      >
         {label}
         {icon ? (
           <span className="material-symbols-rounded"> {icon}</span>

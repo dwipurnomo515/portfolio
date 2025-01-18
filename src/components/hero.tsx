@@ -27,7 +27,12 @@ export default function Hero() {
             Building Scalable Modern Websites for the Future
           </h2>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" href="/cv.pdf" />
+            <ButtonPrimary
+              label="Download CV"
+              icon="download"
+              href="/cv.pdf"
+              download="download"
+            />
             <ButtonOutline
               href="#about"
               label="Scroll down"
