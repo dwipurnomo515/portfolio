@@ -1,0 +1,28 @@
+/* src/styles/globals.css */
+
+@import "tailwindcss";
+
+/* ========== Custom Global Styles ========== */
+
+:root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+a {
+  @apply text-blue-600 hover:underline transition;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-semibold;
+}
+
+code {
+  font-family: var(--font-geist-mono), monospace;
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+}
