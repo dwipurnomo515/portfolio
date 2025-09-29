@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import {
   HiOutlineMail,
@@ -25,6 +26,7 @@ export default function Footer() {
       icon: <FaEnvelope size={24} />,
     },
   ];
+
   return (
     <footer className="bg-gradient-to-r from-slate-900 to-gray-800 text-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
@@ -60,36 +62,36 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/"
                   className="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/about"
                   className="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact"
                   className="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#projects"
                   className="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -125,7 +127,7 @@ export default function Footer() {
             © {currentYear} Dwi Purnomo. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-2 md:mt-0">
-            Crafted with ❤️ using Next.js & TailwindCSS
+            Crafted with ❤️ using Next.js &amp; TailwindCSS
           </p>
         </div>
       </div>
