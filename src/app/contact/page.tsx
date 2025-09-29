@@ -12,7 +12,7 @@ export default function ContactPage() {
           fill="currentColor"
           viewBox="0 0 24 24"
         >
-          <path d="M2.01 6.998c0-1.105.897-2.002 2.002-2.002h15.975c1.105 0 2.002.897 2.002 2.002v10.004c0 1.105-.897 2.002-2.002 2.002H4.012a2.004 2.004 0 01-2.002-2.002V6.998zM20 6.998l-8 5.002-8-5.002V17h16V6.998z" />
+          <path d="M2.01 6.998c0-1.105.897-2.002 2.002-2.002h15.975c1.105 0 2.002 0.897 2.002 2.002v10.004c0 1.105-0.897 2.002-2.002 2.002H4.012a2.004 2.004 0 01-2.002-2.002V6.998zM20 6.998l-8 5.002-8-5.002V17h16V6.998z" />
         </svg>
       ),
       title: "Email",
@@ -55,7 +55,6 @@ export default function ContactPage() {
     },
   ];
 
-  // State form dan toast
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -96,22 +95,20 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-24">
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-black mb-8">
             <span className="bg-gradient-to-r from-slate-800 via-indigo-600 to-emerald-600 bg-clip-text text-transparent">
-              Let's Connect
+              Let&apos;s Connect
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
-            Ready to collaborate, hire me, or just say hello? I'd love to hear
-            from you!
+            Ready to collaborate, hire me, or just say hello? I&apos;d love to
+            hear from you!
           </p>
         </div>
       </section>
 
-      {/* Contact Methods */}
       <section className="px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <SectionTitle title="Get In Touch" />
@@ -146,7 +143,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
       <section
         id="form"
         className="px-6 py-20 bg-gradient-to-r from-slate-50 to-indigo-50"
@@ -157,14 +153,14 @@ export default function ContactPage() {
               Send me a message
             </h2>
             <p className="text-lg text-slate-600">
-              Prefer to send a direct message? Fill out the form below and I'll
-              get back to you as soon as possible.
+              Prefer to send a direct message? Fill out the form below and
+              I&apos;ll get back to you as soon as possible.
             </p>
           </div>
 
           <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-lg">
             <form
-              className="space-y-6 "
+              className="space-y-6"
               action="https://getform.io/f/bkkkqpqb"
               method="POST"
               onSubmit={handleSubmit}
@@ -258,7 +254,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Toast Notification */}
       {toast && (
         <div
           className={`fixed bottom-8 right-8 px-6 py-4 rounded-xl shadow-lg text-white font-medium transition-all duration-300 ${

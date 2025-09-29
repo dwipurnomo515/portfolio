@@ -55,52 +55,50 @@ export default function AboutPage() {
 
       {/* Main Content */}
       <section className="px-6 max-w-4xl mx-auto">
-        <div className="prose prose-lg max-w-none">
-          <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-lg mb-12">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I'm <strong className="text-indigo-600">Dwi Purnomo</strong>, a
-              passionate full-stack developer from Indonesia who loves building
-              useful things with code. With a strong focus on clean architecture
-              and modern UI/UX, I craft web applications that are both beautiful
-              and scalable.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I enjoy working with technologies like{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                Laravel
-              </code>
-              ,{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                React
-              </code>
-              ,{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                Next.js
-              </code>
-              ,{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                TypeScript
-              </code>
-              ,{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                TailwindCSS
-              </code>
-              ,{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                Node.js
-              </code>
-              , and{" "}
-              <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
-                Docker
-              </code>
-              . I'm always curious, learning, and pushing the boundaries of
-              modern web development.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Outside of code, I enjoy exploring new technology and
-              collaborating with other builders.
-            </p>
-          </div>
+        <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-lg mb-12">
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            I&apos;m <strong className="text-indigo-600">Dwi Purnomo</strong>, a
+            passionate full-stack developer from Indonesia who loves building
+            useful things with code. With a strong focus on clean architecture
+            and modern UI/UX, I craft web applications that are both beautiful
+            and scalable.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            I enjoy working with technologies like{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              Laravel
+            </code>
+            ,{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              React
+            </code>
+            ,{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              Next.js
+            </code>
+            ,{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              TypeScript
+            </code>
+            ,{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              TailwindCSS
+            </code>
+            ,{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              Node.js
+            </code>{" "}
+            and{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded text-indigo-600 font-semibold">
+              Docker
+            </code>
+            . I&apos;m always curious, learning, and pushing the boundaries of
+            modern web development.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Outside of code, I enjoy exploring new technology and collaborating
+            with other builders.
+          </p>
         </div>
       </section>
 
@@ -157,27 +155,22 @@ export default function AboutPage() {
                 developing backend automation with cron jobs for reports.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  CodeIgniter
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  Bootsrap
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  PHP
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  MySQL
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  JavaScript
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  API Development
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  Cron Jobs
-                </span>
+                {[
+                  "CodeIgniter",
+                  "Bootsrap",
+                  "PHP",
+                  "MySQL",
+                  "JavaScript",
+                  "API Development",
+                  "Cron Jobs",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
               <ul className="list-disc list-inside text-gray-600">
                 <li>
@@ -214,24 +207,21 @@ export default function AboutPage() {
                 responsive and user-friendly interfaces.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  Laravel
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  TailwindCSS
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  PHP
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  JavaScript
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  QA Testing
-                </span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">
-                  Payment Gateway
-                </span>
+                {[
+                  "Laravel",
+                  "TailwindCSS",
+                  "PHP",
+                  "JavaScript",
+                  "QA Testing",
+                  "Payment Gateway",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
