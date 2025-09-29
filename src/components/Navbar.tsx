@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* CTA Button */}
             <Link href="/contact#form">
               <button className="px-6 py-2 bg-gradient-to-r from-indigo-600 to-emerald-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
-                Let's Talk
+                Let&apos;s Talk
               </button>
             </Link>
           </div>
@@ -107,9 +107,11 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              <button className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-indigo-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg">
-                Let's Talk
-              </button>
+              <Link href="/contact#form">
+                <button className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-indigo-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg">
+                  Let&apos;s Talk
+                </button>
+              </Link>
             </div>
           </div>
         )}
